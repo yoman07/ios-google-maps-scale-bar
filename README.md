@@ -1,1 +1,3 @@
-# ios-google-maps-scale-bar
+# Displaying scale bar on Google Maps iOS
+
+
