@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A322" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScaleBarView" customModule="Mapa_Turystyczna" customModuleProvider="target">
+            <connections>
+                <outlet property="distanceLabel" destination="oBa-Z0-Pfg" id="Mmz-qU-CPr"/>
+                <outlet property="scaleBarConstant" destination="U4y-Wi-s52" id="ehQ-cz-R7w"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8w-Df-nSs">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDw-zF-6f2">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="3" id="cbL-1F-H94"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsR-0k-SHT">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="J5E-ka-hmB"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="1" height="-1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0c-Zo-5jZ">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="XyA-oe-zPS"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Zl-wB-lmG">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="dhB-GG-SF1"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="1" height="-1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="G0c-Zo-5jZ" firstAttribute="leading" secondItem="lDw-zF-6f2" secondAttribute="trailing" constant="-1" id="5Vc-wT-1uo"/>
+                        <constraint firstItem="lDw-zF-6f2" firstAttribute="top" secondItem="F8w-Df-nSs" secondAttribute="top" constant="1" id="96c-ej-ZyV"/>
+                        <constraint firstAttribute="trailing" secondItem="G0c-Zo-5jZ" secondAttribute="trailing" id="AaT-4H-KPM"/>
+                        <constraint firstItem="7Zl-wB-lmG" firstAttribute="leading" secondItem="F8w-Df-nSs" secondAttribute="leading" constant="2" id="G1R-ui-Icq"/>
+                        <constraint firstAttribute="bottom" secondItem="lDw-zF-6f2" secondAttribute="bottom" id="NPV-oB-SAZ"/>
+                        <constraint firstItem="lDw-zF-6f2" firstAttribute="leading" secondItem="F8w-Df-nSs" secondAttribute="leading" id="Om8-Mp-Vt7"/>
+                        <constraint firstItem="bsR-0k-SHT" firstAttribute="leading" secondItem="F8w-Df-nSs" secondAttribute="leading" constant="1" id="RXF-z3-Jw5"/>
+                        <constraint firstAttribute="trailing" secondItem="7Zl-wB-lmG" secondAttribute="trailing" constant="1" id="RuP-eK-unw"/>
+                        <constraint firstAttribute="width" constant="200" id="U4y-Wi-s52"/>
+                        <constraint firstAttribute="height" constant="10" id="WLq-ce-ra0"/>
+                        <constraint firstItem="bsR-0k-SHT" firstAttribute="top" secondItem="F8w-Df-nSs" secondAttribute="top" constant="2" id="hMk-Iv-90b"/>
+                        <constraint firstAttribute="bottom" secondItem="7Zl-wB-lmG" secondAttribute="bottom" constant="1" id="ktM-gn-hxP"/>
+                        <constraint firstAttribute="bottom" secondItem="bsR-0k-SHT" secondAttribute="bottom" constant="1" id="nYI-GE-jwn"/>
+                        <constraint firstAttribute="bottom" secondItem="G0c-Zo-5jZ" secondAttribute="bottom" id="rU3-aF-chX"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBa-Z0-Pfg">
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <size key="shadowOffset" width="1" height="-1"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="F8w-Df-nSs" secondAttribute="trailing" id="MCK-Jx-2dM"/>
+                <constraint firstAttribute="trailing" secondItem="oBa-Z0-Pfg" secondAttribute="trailing" constant="5" id="Sfh-0s-QG9"/>
+                <constraint firstAttribute="bottom" secondItem="oBa-Z0-Pfg" secondAttribute="bottom" constant="4.5" id="WwL-rZ-S2q"/>
+                <constraint firstAttribute="bottom" secondItem="F8w-Df-nSs" secondAttribute="bottom" id="ftC-E1-IeJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="64" y="-88"/>
+        </view>
+    </objects>
+</document>
