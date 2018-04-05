@@ -77,7 +77,7 @@ class ScaleBarView: UIView {
         let scaleDistance = scaleWidth/screenWidth * screenDistance
         let roundedDistance = scaleDistance.roundAsDistance()
         let scaleRatio = CGFloat(roundedDistance) / screenDistance
-        let scaleBarWidth =  scaleWidth * scaleRatio
+        let scaleBarWidth =  screenWidth * scaleRatio
         return CGFloat(scaleBarWidth)
     }
     
